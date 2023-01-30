@@ -24,6 +24,12 @@
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4"
   },
   "cypress-cucumber-preprocessor": {
-    "stepDefinitions": "cypress/e2e/common/**/*.{js,ts}"
+    "stepDefinitions": "cypress/e2e/common/**/*.{js,ts}",
+      "json": {
+        "enabled": true,
+        "generate": true,
+        "formatter":"./cucumber-json-formatter",
+        "output":"output/cucumber-report.json"
+      }
   }
 }

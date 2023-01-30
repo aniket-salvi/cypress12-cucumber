@@ -6,7 +6,7 @@ require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 const nodePolyfills =
   require('@esbuild-plugins/node-modules-polyfill').NodeModulesPolyfillPlugin
 module.exports = defineConfig({
-  
+ video:false, 
 
 viewport:(1920, 1080),
 
